@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace FirstNTierArchitectureProject.DataAccess.Abstract;
-public interface IEntityDal<T> where T : class,IEntity,new()
+public interface IEntityDal<T> where T : class, IEntity, new()
 {
     void Add(T entity);
     void Update(T entity);

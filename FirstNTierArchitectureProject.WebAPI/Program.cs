@@ -12,8 +12,8 @@ public class Program
 
         builder.Services.AddControllers();
         builder.Services.AddDbContext<FirstNTierArchitectureContext>(options =>
-        { 
-        options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer")
+        {
+            options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
         });
 
         builder.Services.AddEndpointsApiExplorer();

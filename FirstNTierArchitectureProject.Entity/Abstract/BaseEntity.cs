@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace FirstNTierArchitectureProject.Entity.Abstract;
-public abstract class BaseEntity
+public abstract class BaseEntity : IEntity
 {
     public Guid Id { get; set; }
     public DateTime CreatedAt { get; set; }
